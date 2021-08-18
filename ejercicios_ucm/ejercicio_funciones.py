@@ -4,7 +4,7 @@
 
 #import <biblioteca>
 #import haraya
-import haraya as HA
+import funciones as HA
 import os
 #from haraya import *
 #import haraya
