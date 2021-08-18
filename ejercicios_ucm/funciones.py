@@ -1,3 +1,4 @@
+#Programa tomado de Profesor de la UCM
 def valida_real(numero):
     contar = numero.count('.')
     if contar > 1:
@@ -33,7 +34,7 @@ def valida_real(numero):
                 return False, numero
 
 def presentacion():
-    print("Creador: Hugo Araya Carrasco")
+    print("Creador:Profesor Hugo Araya Carrasco")
     print("------------------------------")
 
 def fin():
