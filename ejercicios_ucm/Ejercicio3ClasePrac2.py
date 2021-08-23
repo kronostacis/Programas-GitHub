@@ -45,22 +45,6 @@ def porcentaje(cadena):
     elif u>e and u>i and u>o and u>a:
         print("la vocal con mayor frecuencia de la cadena es: u")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     cadena = input("introduce la cadena: ")
     porcentaje(cadena)
