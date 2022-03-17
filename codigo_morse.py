@@ -1,67 +1,28 @@
-if __name__ == ("__main__"):
-    print("1=de morse a alfabeto  , 2=de alfabeto a morse ")
-    Mistring=int(input())
-    if Mistring == 1:
-        print("ingrese mensaje")
-
-        morse=input()
-
-        morse=morse.replace(".-","a")
-        morse=morse.replace("-...","b")
-        morse=morse.replace("-.-.","c")
-        morse=morse.replace("-..","d")
-        morse=morse.replace(".","e")
-        morse=morse.replace("..-.","f")
-        morse=morse.replace("--.","g")
-        morse=morse.replace("....","h")
-        morse=morse.replace("..","i")
-        morse=morse.replace(".---","j")
-        morse=morse.replace("-.-","k")
-        morse=morse.replace(".-..","l")
-        morse=morse.replace("--","m")
-        morse=morse.replace("-.","n")
-        morse=morse.replace("---","o")
-        morse=morse.replace(".--.","p")
-        morse=morse.replace("--.-","q")
-        morse=morse.replace(".-.","r")
-        morse=morse.replace("...","s")
-        morse=morse.replace("-","t")
-        morse=morse.replace("..-","u")
-        morse=morse.replace("...-","v")
-        morse=morse.replace(".--","w")
-        morse=morse.replace("-..-","x")
-        morse=morse.replace("-.--","y")
-        morse=morse.replace("--..","z")
-
-        print(morse)
-
-    else :
-        print("ingrese mensaje: ")
-        alfabeto =input()
-        alfabeto=alfabeto.replace("a",".-")
-        alfabeto=alfabeto.replace("b","-...")
-        alfabeto=alfabeto.replace("c","-.-.")
-        alfabeto=alfabeto.replace("d","-..")
-        alfabeto=alfabeto.replace("e",".")
-        alfabeto=alfabeto.replace("f","..-.")
-        alfabeto=alfabeto.replace("g","--.")
-        alfabeto=alfabeto.replace("h","....")
-        alfabeto=alfabeto.replace("i","..")
-        alfabeto=alfabeto.replace("j",".---")
-        alfabeto=alfabeto.replace("k","-.-")
-        alfabeto=alfabeto.replace("l",".-..")
-        alfabeto=alfabeto.replace("m","--")
-        alfabeto=alfabeto.replace("n","-.")
-        alfabeto=alfabeto.replace("o","---")
-        alfabeto=alfabeto.replace("p",".--.")
-        alfabeto=alfabeto.replace("q","--.-")
-        alfabeto=alfabeto.replace("r",".-.")
-        alfabeto=alfabeto.replace("s","...")
-        alfabeto=alfabeto.replace("t","-")
-        alfabeto=alfabeto.replace("u","..-")
-        alfabeto=alfabeto.replace("v","...-")
-        alfabeto=alfabeto.replace("w",".--")
-        alfabeto=alfabeto.replace("x","-..-")
-        alfabeto=alfabeto.replace("y","-.--")
-        alfabeto=alfabeto.replace("z","--..")
-        print(alfabeto)
+dicc={"a":".-","b":"-..." ,"c":"-.-." ,"d":"-.." ,"e":"." ,"f":"..-." ,"g":"--." ,"h":"...." ,"i":".." ,"j":".---" ,"k":"-.-" ,"l":".-.." ,"m":"--" ,"n":"-." ,"o":"---" , "p":".--.","q":"--.-" ,"r":".-." ,"s":"..." ,"t":"-" ,"u":"..-" ,"v":"...-" ,"w":".--" ,"x":"-..-","y":"-.--" ,"z":"--..",' ':' '}
+dicc1={".-":"a","-...":"b" , "-.-.":"c","-..":"d" , ".":"e","..-.":"f" ,"--.":"g" ,"....":"h" ,"..":"i" ,".---":"j" ,"-.-":"k" ,".-..":"l" , "--":"m","-.":"n" ,"---":"o" ,".--.":"p" , "--.-":"q",".-.":"r" , "...":"s", "-":"t", "..-":"u", "...-":"v",".--":"w" ,"-..-":"x" ,"-.--":"y" ,"--..":"z",'':''}
+def ToMorse(cadena):
+    lista=list(cadena)
+    conve=''
+    for i in lista:
+        conve=conve+dicc[i]+' '
+    print(conve)
+    return conve
+def Toes(cadena):
+    lista=cadena.split(' ')
+    conve=''
+    for i in lista:
+        conve=conve+dicc1[i]+' '
+    print(conve)
+    return conve
+if __name__=='__main__':
+    print('introdusca 1 si quiere de es a morse')
+    print('introdusca 2 si quiere de morse a es')
+    num=(input())
+    if num=='1':
+        cadena=input("introduzca cadena: ")
+        ToMorse(cadena)
+    elif num=='2':
+        cadena=input("introduzca cadena: ")
+        Toes(cadena)
+    else:
+        print('Lo introducido es erroneo')

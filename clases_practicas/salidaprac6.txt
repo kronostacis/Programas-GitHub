@@ -1,0 +1,18 @@
+Region = Maule
+Casos totales acumulados= 101732
+Fallecidos totales= 1780
+Casos confirmados recuperados=99621
+Casos confirmados por antigeno=8106
+Casos con sospecha de reinfeccion= 66
+Casos probables acumulados=10161
+Casos activos probables=35
+Casos nuevos totales=45
+Casos nuevos con sintomas=27
+Casos nuevos sin sintomas*=18
+Casos nuevos reportados por laboratorio=0
+Casos nuevos confirmados por antigeno=14
+Casos activos confirmados=215
+El porcentaje da casos de Maule con respecto a Chile es: 9.848209099709583
+El porcentaje de fallecidos en Maule con respecto al total de fallecidos en chile: 4.753638670049406
+la region con mas posibilidad de muerte es: Valparaíso con una probabilidad de 2.8115742055923056
+el porcentaje de muertes del 2021 con respecto al 2020 es: 274.2857142857143
