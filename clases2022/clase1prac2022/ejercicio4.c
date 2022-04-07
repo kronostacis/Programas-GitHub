@@ -7,16 +7,16 @@ haciendo mención al descuento si corresponde
 
 #include <stdio.h>
 int main(){
-    float precio;
-    char mes[15];
+    float precio, preciofinal;
+    int mes;
     printf("introduzca el mes:\n ");
-    scanf("%c", &mes);
+    scanf("%i", &mes);
     printf("introduzca el precio:\n");
     scanf("%f", &precio);
     
-    if(mes=="marzo" || mes=="abril" || mes=="mayo"){
-        precio=precio-(precio*0.13);
-        printf("El precio final es %f", precio);
+    if(mes==3 || mes==4 || mes==5){
+        preciofinal=precio-(precio*0.13);
+        printf("El precio final es %.2f", preciofinal);
     }
     return 0;
 }
