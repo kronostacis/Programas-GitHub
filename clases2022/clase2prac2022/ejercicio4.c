@@ -21,6 +21,7 @@ int primo(int N){
     }  
     return N;  
 }
+
 int listaprim(int Num, int persona);
 int listaprim(int Num, int persona){
     int x,y=0,z;
@@ -54,6 +55,6 @@ int listaprim(int Num, int persona){
 }
 
 int main(){
-    printf("%d", listaprim(40 , 2));
+    printf("%d", listaprim(40 , 1));
     return 0;
 }
