@@ -1,0 +1,18 @@
+Matricula: 310
+Nombre: esteban
+Edad: 19
+Telefono: 96865
+Nota final: 50
+ ------------------------------------------------
+Matricula: 311
+Nombre: cristobal
+Edad: 21
+Telefono: 9684324
+Nota final: 50
+ ------------------------------------------------
+Matricula: 312
+Nombre: benjamin\
+Edad: 19
+Telefono: 96831
+Nota final: 50
+ ------------------------------------------------

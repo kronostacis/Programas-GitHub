@@ -14,8 +14,6 @@ int main(){
     char matriz[3][3];
     int nAleatorio;
     srand(getpid());
-
-
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
             matriz[i][j]=' ';

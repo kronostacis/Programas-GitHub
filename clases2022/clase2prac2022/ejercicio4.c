@@ -37,7 +37,7 @@ int listaprim(int Num, int persona){
         }    
     }
     if (persona==1){
-        for(z=0;z<5;z++){
+        for(z=4;z>=0;z--){
             printf("%d",lista[z]);
         }
     }
@@ -55,6 +55,6 @@ int listaprim(int Num, int persona){
 }
 
 int main(){
-    printf("%d", listaprim(40 , 1));
+    printf("%d", listaprim(40 , 3));
     return 0;
 }
